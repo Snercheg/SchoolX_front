@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="./Todo App_files/main.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="content">
+
+      <div id="days">
+        <div class="todo">
+          <div class="todo__day">Дело 1</div>
+          <div class="todo__comment">Learn Javascript</div>
+          <button class="todo__delete" onclick="deleteTodo(0)">
+            <img src="./Todo App_files/delete.svg" alt="Удалить дело 01">
+          </button>
+        </div>
+        <div class="todo">
+          <div class="todo__day">Дело 2</div>
+          <div class="todo__comment">Learn DOM</div>
+          <button class="todo__delete" onclick="deleteTodo(1)">
+            <img src="./Todo App_files/delete.svg" alt="Удалить дело 11">
+          </button>
+        </div>
+        <div class="todo">
+          <div class="todo__day">Дело 3</div>
+          <div class="todo__comment">Make ToDo App</div>
+          <button class="todo__delete" onclick="deleteTodo(2)">
+            <img src="./Todo App_files/delete.svg" alt="Удалить дело 21">
+          </button>
+        </div>
+      </div>
+
+      <div class="todo">
+        <div class="todo__day">Дело 4</div>
+        <form class="todo__form" onsubmit="addTodo(event)">
+          <input name="comment" class="input_icon" type="text" placeholder="Нужно сделать">
+          <img class="input__icon" src="./Todo App_files/comment.svg" alt="Иконка">
+          <button class="button" type="submit">Добавить</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <script src="./Todo App_files/app.js.Без названия"></script> -->
+
+
+</body>
+
+</html>
